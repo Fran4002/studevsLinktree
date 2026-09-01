@@ -1,16 +1,16 @@
 ---
-import { Image } from "astro:assets"
-import discord from "@/assets/images/Discord.svg"
-import facebook from "@/assets/images/Facebook.svg"
-import instagram from "@/assets/images/Instagram.svg"
-import Layout from "@/layouts/Layout.astro"
-import linkedin from "@/assets/images/Linkedin.svg"
-import logoStudevs from "@/assets/images/logoStudevs.svg"
-import twitch from "@/assets/images/TwitchGlitchWhite.svg"
-import txt from "@/assets/images/text.svg"
-import x from "@/assets/images/twitterX.svg"
-import youtube from "@/assets/images/Youtube.svg"
-import whatsapp from "@/assets/images/WhatsApp.svg"
+import { Image } from "astro:assets";
+import discord from "@/assets/images/Discord.svg";
+import facebook from "@/assets/images/Facebook.svg";
+import instagram from "@/assets/images/Instagram.svg";
+import Layout from "@/layouts/Layout.astro";
+import linkedin from "@/assets/images/Linkedin.svg";
+import logoStudevs from "@/assets/images/logoStudevs.svg";
+import twitch from "@/assets/images/TwitchGlitchWhite.svg";
+import txt from "@/assets/images/text.svg";
+import x from "@/assets/images/twitterX.svg";
+import youtube from "@/assets/images/Youtube.svg";
+import whatsapp from "@/assets/images/WhatsApp.svg";
 
 const SOCIAL_LINKS = [
   {
@@ -37,8 +37,8 @@ const SOCIAL_LINKS = [
     name: "WhatsApp",
     img: whatsapp,
     href: "https://chat.whatsapp.com/HcdeV05g6fs4AbQuUnCWe8?mode=gi_t",
-  }
-]
+  },
+];
 ---
 
 <Layout>
@@ -61,8 +61,24 @@ const SOCIAL_LINKS = [
             <Image src={img} alt={name} />
             <p>{name}</p>
           </a>
-        )
+        );
       })
     }
+  </div>
+  <div id="upcomingEvent">
+    <h2>Próximo evento</h2>
+    <div class="event-card">
+      <a
+        target="_blank"
+        href="https://discord.gg/fVE5BZXm?event=1544126952711913554"
+      >
+        <img
+          src="https://storage.googleapis.com/rootbound-event-images/event/f8320635-e71e-44b7-9bba-cd72a4c79784"
+          alt="Próximo Evento"
+          class="event-image"
+          loading="lazy"
+        />
+      </a>
+    </div>
   </div>
 </Layout>
