@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import discord from "@/assets/images/Discord.svg";
+import eventImage from "@/assets/images/Event-28-Oct-26.png";
 import facebook from "@/assets/images/Facebook.svg";
 import instagram from "@/assets/images/Instagram.svg";
 import Layout from "@/layouts/Layout.astro";
@@ -66,8 +67,8 @@ const SOCIAL_LINKS = [
     }
   </div>
   <div id="upcomingEvent">
-    <img
-      src="src/assets/images/Event-28-Oct-26.png"
+    <Image
+      src={eventImage}
       alt="Próximo Evento"
       class="event-image"
       loading="lazy"
